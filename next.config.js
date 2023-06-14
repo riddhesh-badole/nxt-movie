@@ -1,4 +1,12 @@
+const { Domine } = require('next/font/google')
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+    images:{
+        domains:["image.tmdb.org"]
+    }
+}
 
 module.exports = nextConfig
+
+

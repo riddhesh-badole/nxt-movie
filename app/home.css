@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.hi{
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 60px;
+    margin: 1rem;
+}
+
+.status{
+    border-radius: 60px;
+    background-color: rgba(55, 255, 135, 0.938);
+    color: rgb(48, 41, 41);
+    text-align: center;
+    display: inline-block;
+   padding: .5rem;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+align-items: center;
+}
+
+footer{
+    text-align: right;
+    bottom: 0%;
+}
