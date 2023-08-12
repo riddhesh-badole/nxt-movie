@@ -11,19 +11,26 @@ export default async function movieDetail({params}) {
 const res = await data.json()
   return (
     <div>
-        <div>
-            <h2 >{res.title}</h2>
-            <h2>{res.release_date}</h2>
-            <h2>{res.runtime} min</h2>
-            <h2 class="status">{res.status}</h2>
-            <Image class="image"
+        <div class=" movie_detail">
+           <div className="top">
+           <h3 class="status">{res.status}</h3>
+            <h1 >{res.title}</h1>
+            
+            <h3 class="date_time">{res.release_date}</h3>
+            <h3 class="date_time">{res.runtime} min</h3> 
+           
+            </div>
+            <div class="image"><Image class="poster_img"
             src={imagePath + res.backdrop_path}
             width={800}
             height={500}
             alt='image'
-            />
+            /></div>
             <h4>{res.overview}</h4>
         </div>
+        <footer>
+        <h2>@riddhesh</h2>
+      </footer>
     </div>
   )
 }

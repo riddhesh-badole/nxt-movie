@@ -7,9 +7,11 @@ export default function Movie({title,id,poster_path,release_date}) {
   const imagePath = 'https://image.tmdb.org/t/p/original'
   return (
     <div class="cont">
+      <div class="poster_movie">
       <h2>{title}</h2>
       <h3>{release_date}</h3>
-      <Link href={`/${id}`}>
+      </div>
+      <Link class="image" href={`/${id}`}>
         <Image 
         src={imagePath + poster_path}
         width={500}
